@@ -1,1 +1,5 @@
-# aws-ci-cd-codedeploy
+#!/bin/bash
+yum -y install httpd
+systemctl enable httpd
+systemctl start httpd
+echo '<html><h1>Hello Vignesh!</h1></html>' > /var/www/html/index.html
